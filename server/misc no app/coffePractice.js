@@ -17,12 +17,29 @@ function processProduct(response){
     })
 }
 
-myProduct("old")
-    .then(response =>{
-        console.log(response);
-        return processProduct(response);
-    })
-    .then(processResult=>{
-        console.log(processResult);
-    })
-    .catch(err => {console.error("Error", err)})
+async function orderProduct(product)
+{
+    try{
+        const  newProductResponse = await myProduct(product);
+        console.log(newProductResponse);
+        const order = await processProduct(newProductResponse);
+        console.log(order);
+    }
+    catch(err)
+    {
+        console.error("Error", err)
+    }
+}
+orderProduct("old");
+orderProduct("new");
+// myProduct("new")
+//     .then(response =>{
+//         console.log(response);
+//         return processProduct(response);
+//     })
+//     .then(processResult=>{
+//         console.log(processResult);
+//     })
+//     .catch(err => {console.error("Error", err)})
+
+
