@@ -2,14 +2,19 @@
 
 const express = require("express");
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
+const {data} = require("./mytestdata.json");
 
-app.get("/api", async (req, res) => {
-    setTimeout(() => res.json({ message: "Hello from server!" }), 5000);    
-    
-  });
+app.get("/", async (req, res) => {
+   res.json(data)    
+});
+
+app.get("/:id", async (req, res) => {
+  const id = req.params.id;
+  res.json(data.filter(d => d.id == id));    
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);

@@ -1,0 +1,69 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "edad": 30,
+        "ciudad": "Xalapa",
+        "profesion": "Ingeniero",
+        "email": "juan@example.com"
+      },
+      {
+        "id": 2,
+        "nombre": "María García",
+        "edad": 25,
+        "ciudad": "Xochimilco",
+        "profesion": "Médico",
+        "email": "maria@example.com"
+      },
+      {
+        "id": 3,
+        "nombre": "Carlos López",
+        "edad": 28,
+        "ciudad": "Xilitla",
+        "profesion": "Abogado",
+        "email": "carlos@example.com"
+      },
+      {
+        "id": 4,
+        "nombre": "Luisa Rodríguez",
+        "edad": 35,
+        "ciudad": "Xela",
+        "profesion": "Profesor",
+        "email": "luisa@example.com"
+      },
+      {
+        "id": 5,
+        "nombre": "Andrés Martínez",
+        "edad": 32,
+        "ciudad": "Xicotencatl",
+        "profesion": "Diseñador",
+        "email": "andres@example.com"
+      },
+      {
+        "id": 6,
+        "nombre": "Elena Fernández",
+        "edad": 27,
+        "ciudad": "Xochitlán",
+        "profesion": "Arquitecto",
+        "email": "elena@example.com"
+      },
+      {
+        "id": 7,
+        "nombre": "Isabel Torres",
+        "edad": 29,
+        "ciudad": "Xalisco",
+        "profesion": "Farmacéutico",
+        "email": "isabel@example.com"
+      },
+      {
+        "id": 8,
+        "nombre": "Javier Ramírez",
+        "edad": 31,
+        "ciudad": "Xayacatlán",
+        "profesion": "Empresario",
+        "email": "javier@example.com"
+      }
+    ]
+  }
+  
