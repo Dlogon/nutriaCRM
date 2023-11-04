@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import React from "react";
-import LoginForm from './components/LoginForm/LoginForm'
-
+import Counter from "./components/Counter";
 function App() {
 
-  const [data, setData] = React.useState(null);
+  // const [data, setData] = React.useState(null);
+
+  var counter = 0;
+  const handleCounterClick = () =>{
+    console.log("click")
+    counter ++;
+  }
 
   // React.useEffect(()=> {
   //   fetch("/api")
@@ -14,12 +17,7 @@ function App() {
   //   .catch(err => setData(err.message) )
   // })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <LoginForm />
-      </header>
-    </div>
+    <Counter />
   );
 }
 
