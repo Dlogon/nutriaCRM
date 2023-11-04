@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import React from "react";
-
+import Counter from "./components/Counter";
 function App() {
 
-  const [data, setData] = React.useState(null);
+  // const [data, setData] = React.useState(null);
 
-  React.useEffect(()=> {
-    fetch("/api")
-    .then((res) => res.json())
-    .then((data) => setData(data.message))
-  })
+  var counter = 0;
+  const handleCounterClick = () =>{
+    console.log("click")
+    counter ++;
+  }
+
+  // React.useEffect(()=> {
+  //   fetch("/api")
+  //   .then((res) => res.json())
+  //   .then((data) => setData(data.message))
+  //   .catch(err => setData(err.message) )
+  // })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-      </header>
-    </div>
+    <Counter />
   );
 }
 
